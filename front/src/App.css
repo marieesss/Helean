@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'Geomanist Bold';
+  src: local('AvenirBlack'), url(../public/fonts/Geomanist-Bold.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+
+*{
+  margin:0px;
+  box-sizing: border-box;
+  font-family: 'Geomanist Bold';
+  text-align: center;
+  color: #7485FF
+}
+
+p{
+  font-size: 11px;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.container{
+  width: 600px;
+  height : 600px;
+  background-color: white;
+  box-shadow: rgba(116, 133, 255, 0.25) 0px 6px 12px -2px, rgba(116, 133, 255, 0.3) 0px 3px 7px -3px;
+  padding : 30px;
+  border-radius: 15px;
+}
+
+.page{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+img{
+  width: 70px;
+  height:70px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.row-center{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+}
+
+.piechart{
+  width:70px;
+  height:70px;
+}
+
+.box2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+}
+
+.box3{
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box{
+  height: 150px;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: rgb(116, 133, 255, 0.2) 3px 3px 6px 0px inset, rgba(116, 133, 255, 0.2) -3px -3px 6px 1px inset;
+  margin-bottom:40px;
+}
+.line-separator{
+  width: 1px;
+  height : 50px;
+  background-color: grey;
+}
+
+.line{
+  height : 100%;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.chart{
+  width:45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: rgb(116, 133, 255, 0.2) 3px 3px 6px 0px inset, rgba(116, 133, 255, 0.2) -3px -3px 6px 1px inset;
+}
+
+h2{
+  font-size: 18px;
+  color:#456efe
+}
+
+button{
+  align-items: center;
+  background-color: transparent;
+  color: #7485FF;
+  border: 1px solid;
+  border-color: #7485FF;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  font-size: .95rem;
+  font-weight: 600;
+  justify-content: center;
+  padding: 10px 25px;
+  transition: all .2s ease;
+}
+
+
+.popup {
+  position: fixed;
+  z-index: 9999;
+  animation: popup 0.7s;
+
+}
+@keyframes popup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+
+  .container{
+    width: 300px;
+    height : 300px;
+    padding : 10px
+  }
+
+  p{
+    font-size: 9px
+  }
+  .piechart{
+    width:20px;
+    height:20px;
+  }
+
+
+  .chart{
+    margin-bottom: 10px;
+    width: 25%
+  }
+  h2{
+    font-size: 11px;
+  }
+
+  img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .box1{
+    width: 40%;
+  }
+  
+  .box2{
+    width: 100%;
+  }
+  
+  .box{
+    height: 30px;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: rgb(116, 133, 255, 0.2) 3px 3px 6px 0px inset, rgba(116, 133, 255, 0.2) -3px -3px 6px 1px inset;
+    margin-bottom:10px;
+  }
+
+  button{
+    font-size: .80rem;
+    font-weight: 400;
+    padding: 8px 15px;
+
+  }
+
+
+}
+
